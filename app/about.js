@@ -3,7 +3,7 @@
 import { useScroll, motion} from "framer-motion"
 import { useRef, useState } from "react"
 import useOnScreen from "./Components/useOnScreen"
-import rowanphoto from "../app/rowanphoto.webp"
+import rowanphoto from "./rowanphoto.webp"
 
 import stickyHeader from "./header"
 
