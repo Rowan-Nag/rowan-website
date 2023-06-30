@@ -40,7 +40,7 @@ export default function About(){
             className='self-center relative transition-all duration-700 delay-700 flex flex-col w-[33%] md:w-[80%] h-fit p-10 sm:py-0 sm:p-4 m-10 sm:m-0 justify-start border-4 border-neutral-400 bg-neutral-300'
             style = {activated ? {'borderOpacity':1} : {'borderColor':'rgba(0,0,0,0)', color:'rgba(0,0,0,.3)'}}
             >
-                <img src={rowanphoto.src} className="border-2 self-center drop-shadow-sm border-neutral-400 w-40vh md:w-max md:h-auto h-40vh m-10 sm:mt-4"/>
+                {/* <img ssc={rowanphoto.src} className="border-2 self-center drop-shadow-sm border-neutral-400 w-40vh md:w-max md:h-auto h-40vh m-10 sm:mt-4"/> */}
                 <div className='text-lg text-neutral-700 text-center sm:text-base'>
                     
                     My name is Rowan Nag. I'm an undergraduate student at Purdue University. <br/><br/>
