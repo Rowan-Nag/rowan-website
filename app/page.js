@@ -23,12 +23,12 @@ export default function Page() {
     {/* <Home/> */}
     
 
-    <About/>
+    {/* <About/> */}
 
 
-    <div className='h-screen w-full bg-neutral-800 flex flex-col justify-around z-0'>
-      {/* <div className='text-8xl text-neutral-500 text-center w-ful self-center font-light font-rubik md:text-2xl'>WORK IN PROGRESS <br/> <a className="text-2xl text-blue-500 underline underline-offset-8 md:text-lg" href="https://www.instagram.com/rowan.nag/">See my astrophotography here</a></div> */}
-    </div>
+    {/* <div className='h-screen w-full bg-neutral-800 flex flex-col justify-around z-0'>
+      <div className='text-8xl text-neutral-500 text-center w-ful self-center font-light font-rubik md:text-2xl'>WORK IN PROGRESS <br/> <a className="text-2xl text-blue-500 underline underline-offset-8 md:text-lg" href="https://www.instagram.com/rowan.nag/">See my astrophotography here</a></div>
+    </div> */}
     {/* <Astrophotography/> */}
    
     
