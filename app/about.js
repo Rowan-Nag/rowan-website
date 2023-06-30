@@ -12,14 +12,13 @@ export default function About(){
     
     const ref = useRef(null)
     const activated = useOnScreen(ref)
+    // const activated = true
 
     let chevron = (side) => {return {
         clipPath: "polygon(45% 0, 100% 50%, 45% 100%, 0 100%, 55% 50%, 0 0)",
         opacity: (activated ? 1 : 0),
         ... activated ? null : (side=="left" ? {left:"0px"} : {right:"0px"})
-    
-    }
-    }
+    }}
 
     
 

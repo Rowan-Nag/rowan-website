@@ -11,7 +11,7 @@ export default function useOnScreen(ref) {
   
   
     useEffect(() => {
-      observer = IntersectionObserver(
+      observer = new IntersectionObserver(
         ([entry]) => setIntersecting(entry.isIntersecting)
       
       )
