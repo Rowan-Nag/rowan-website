@@ -15,7 +15,7 @@ export default function Home(){
 
         <div
         className='transition-all duration-1000 self-center opacity-0 w-[40%] md:w-[80%]
-         min-w-[20em] min-h-[16em] overflow-hidden fixed z-30 p-10 md:p-5 md:text-center pr-4 
+        min-h-[16em] overflow-hidden fixed z-30 p-10 md:p-5 md:text-center pr-4 
          mb-40 md:mb-0 ml-24 md:ml-[10%] h-2/6 flex flex-col justify-evenly text-white font-oxanium
           border-neutral-500 border-solid border-4 '
         style={{opacity: (activated ? 1 : 0 )}}
