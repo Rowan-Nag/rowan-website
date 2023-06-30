@@ -11,15 +11,16 @@ export default function About(){
     
     
     const ref = useRef(null)
-    const activated = useOnScreen(ref)
+    // const activated = useOnScreen(ref)
+    const activated = true
 
-    let chevron = (side) => {return {
-        clipPath: "polygon(45% 0, 100% 50%, 45% 100%, 0 100%, 55% 50%, 0 0)",
-        opacity: (activated ? 1 : 0),
-        ... activated ? null : (side=="left" ? {left:"0px"} : {right:"0px"})
+    // let chevron = (side) => {return {
+    //     clipPath: "polygon(45% 0, 100% 50%, 45% 100%, 0 100%, 55% 50%, 0 0)",
+    //     opacity: (activated ? 1 : 0),
+    //     ... activated ? null : (side=="left" ? {left:"0px"} : {right:"0px"})
     
-    }
-    }
+    // }
+    // }
 
     
 
@@ -29,11 +30,11 @@ export default function About(){
         <div className="absolute top-1/2 " ref={ref}></div>
         <div className=' absolute -top-8 w-full h-8 bg-gradient-to-b from-[rgba(0,0,0,0)] to-neutral-200'></div>
     
-        <div className="transition-all delay-100 duration-2000 absolute w-30vh h-50vh bg-neutral-500 self-center left-10 md:-left-12 sm:hidden" style={chevron("left")}></div>
+        {/* <div className="transition-all delay-100 duration-2000 absolute w-30vh h-50vh bg-neutral-500 self-center left-10 md:-left-12 sm:hidden" style={chevron("left")}></div>
         <div className="transition-all delay-300 duration-2000 absolute w-40vh h-70vh bg-neutral-400 self-center left-72 md:hidden   sm:hidden" style={chevron("left")}></div>
         <div className="transition-all delay-100 duration-2000 absolute w-30vh h-50vh bg-neutral-500 self-center right-10 -scale-x-100 md:-right-12 sm:hidden" style={chevron("right")}></div>
         <div className="transition-all delay-300 duration-2000 absolute w-40vh h-70vh bg-neutral-400 self-center right-72 -scale-x-100 md:hidden    sm:hidden" style={chevron("right")}></div>
-        
+         */}
 
 
             <div 

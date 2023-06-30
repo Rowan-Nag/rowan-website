@@ -23,7 +23,7 @@ export default function Page() {
     <Home/>
     
 
-    {/* <About/> */}
+    <About/>
 
 
     <div className='h-screen w-full bg-neutral-800 flex flex-col justify-around z-0'>
