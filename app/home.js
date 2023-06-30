@@ -28,7 +28,7 @@ export default function Home(){
              md:to-[rgba(0,0,0,.7)] md:h-full md:backdrop-blur-none md:from-[rgba(20,20,20,.7)]
              '></div>
             
-            <div className='transition-all duration-300 delay-600 relative w-[100%] overflow-hidden font-bs font-bold text-7xl'
+            <div className='transition-all duration-300 delay-600 relative w-[100%] overflow-hidden font-bs font-bold text-6xl'
                 style={
 
                 ...activated ? {
@@ -42,7 +42,7 @@ export default function Home(){
             {["Student", "Scientist", "Astronomer"].map((_, i)=>(
                 <div 
                 key={i}
-                className='text-neutral-300 transition-all relative left-10 md:left-0 text-4xl overflow-hidden' 
+                className='text-neutral-300 transition-all relative left-10 md:left-0 text-3xl overflow-hidden' 
                 style={{
                     transitionDelay: `${400+i*150}ms`,
                     ...activated ? {
