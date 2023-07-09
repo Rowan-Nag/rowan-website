@@ -4,7 +4,7 @@ import { useRef } from "react"
 import Astroimg from "./Components/astroImg"
 import useOnScreen from "./Components/useOnScreen"
 import andromeda from "./andromeda_lowres.webp"
-
+import Image from "next/image"
 
 export default function Astrophotography(){
 
@@ -28,12 +28,14 @@ export default function Astrophotography(){
                 <div className=""></div>
             </div>
             <div className="w-full h-full grid grid-cols-3 justify-around self-center p-5" ref={ref}>
+                <Image src={andromeda}  placeHolder='blur'/>
+                
+                {/* <Astroimg src={andromeda.src}/>
                 <Astroimg src={andromeda.src}/>
                 <Astroimg src={andromeda.src}/>
                 <Astroimg src={andromeda.src}/>
                 <Astroimg src={andromeda.src}/>
-                <Astroimg src={andromeda.src}/>
-                <Astroimg src={andromeda.src}/>
+                <Astroimg src={andromeda.src}/> */}
 
 
             </div>
