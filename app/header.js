@@ -2,7 +2,7 @@ export default function StickyHeader(){
 
     return (
         <header
-            className='font-jb text-md font-normal z-50 w-screen h-10vh bg-transparent text-neutral-700 flex flex-row justify-evenly sticky top-0
+            className='font-jb text-md font-normal z-50 w-screen h-10vh bg-transparent text-neutral-700 flex flex-row justify-evenly fixed top-0
             md:hidden'>
             {['Home','About', 'Projects', 'Astrophotography', 'Contact'].map((title,i)=>(
             <div

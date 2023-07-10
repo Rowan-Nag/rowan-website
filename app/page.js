@@ -10,6 +10,7 @@ import Astrophotography from './photography'
 import About from './about'
 import Home from './home'
 import StickyHeader from './header'
+import HomeTest from './homeTest'
 
 export default function Page() {
   const  shadow =  {textShadow: '0px 0px 0 lightgray, 1px 0px 0 lightgray, -1px 0px 0 lightgray, 0px 1px 0 lightgray'}
@@ -20,8 +21,8 @@ export default function Page() {
         
     
     <StickyHeader/>
-    <Home/>
-    
+    {/* <Home/> */}
+    <HomeTest/>
 
     <About/>
 

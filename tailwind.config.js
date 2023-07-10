@@ -12,6 +12,18 @@ module.exports = {
   theme: {
     
     extend: {
+      keyframes: {
+        star: {
+          '0%':  {opacity: 0,right:'-230px', top: "0vh"},
+          '10%': {opacity:1},
+          '50%': {opacity:1},
+          '60%': {opacity: 0, right: '1000px', top:"0vh"},
+          '100%':{opacity: 0, right: '1000px', top: "0vh"}
+        }
+      },
+      animation: {
+        'star': 'star 15s linear infinite'
+      },
       screens: {
         // I DIDNT KNOW IT WAS MOBILE FIRST... AAAAAAAAAHHHHHHHHHH
         xl: { max: "1280px" },
