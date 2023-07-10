@@ -45,7 +45,7 @@ export default function HomeTest(){
         let stars = []
 
         for(let i = 0; i < numStars; i++){
-            let speed = 3+Math.random()*9
+            let speed = 3+Math.random()*8
             let delay = Math.random()*5
             let offsetY = random(10, 50)
             let offsetX = random(10, 95)
@@ -92,15 +92,15 @@ export default function HomeTest(){
         }}
         >
             <div className="absolute self-start z-0" ref={starContainer}>
-                <div className="absolute w-2 h-2 bg-white"></div>
+
                 <TransitionGroup>
                     {stars}
                 </TransitionGroup>
                 <div className="animate-star"></div>
             </div>
             <div className="z-10 bg-neutral-800 self-center text-center p-4 border-neutral-600 border-2 text-neutral-300">
-                <div className="text-6xl font-serif">ROWAN NAG</div>
-                <div className="text-4xl font-serif">Planetary Scientist</div>
+                <div className="text-6xl font-serif md:text-4xl">ROWAN NAG</div>
+                <div className="text-4xl font-serif md:text-2xl">Planetary Scientist</div>
             </div>
 
         </div>
