@@ -1,8 +1,9 @@
 'use client'
 
-import andromedaImg from "./andromeda_lowres.webp"
+import andromedaImg from "./res/andromeda_lowres.webp"
 import { useEffect, useRef, useState } from "react"
 import useOnScreen from "./Components/useOnScreen"
+import Image from 'next/image'
 
 export default function Home(){
 
@@ -60,16 +61,17 @@ export default function Home(){
             ref={ref}
             className= 'transition-opacity opacity-0 fixed z-10 top-24 right-0 md:right-[15vw] sm:left-0 sm:right-auto w-[80vh] h-80vh bg-contain bg-no-repeat bg-origin-content bg-right' 
             style={{
-            backgroundImage: `url(${andromedaImg.src})`,
+            // backgroundImage: `url(${andromedaImg.src})`,
             transitionDuration:'4000ms',
             opacity: (activated ? 1 : 0)
             }}
             
             >
-        <div className=' absolute w-2/6 h-full bg-gradient-to-r from-black to-transparent'></div>
-        <div className=' absolute bottom-0 w-full h-30vh bg-gradient-to-t from-black to-transparent'></div>
-        <div className=' absolute top-0 w-full h-30vh bg-gradient-to-b from-black to-transparent'></div>
-        <div className=' absolute right-0 w-2/6 h-full bg-gradient-to-l from-black to-transparent'></div>
+        <Image src={andromedaImg} placeholder='blur' style={{zIndex: "-20" }} />
+        <div className=' absolute z-20 top-0 w-2/6 h-full bg-gradient-to-r from-black to-transparent'></div>
+        <div className=' absolute z-20 bottom-0 w-full h-30vh bg-gradient-to-t from-black to-transparent'></div>
+        <div className=' absolute z-20 top-0 w-full h-30vh bg-gradient-to-b from-black to-transparent'></div>
+        <div className=' absolute z-20 top-0 right-0 w-2/6 h-full bg-gradient-to-l from-black to-transparent'></div>
         </div>
                         {/* ANDROMEDA END */}
 

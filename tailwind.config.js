@@ -12,6 +12,18 @@ module.exports = {
   theme: {
     
     extend: {
+      keyframes: {
+        star: {
+          '0%':  {opacity: 0,right:'-330px', top: "0vh"},
+          '10%': {opacity:1},
+          '50%': {opacity:1},
+          '60%': {opacity: 0, right: '1000px', top:"0vh"},
+          '100%':{opacity: 0, right: '1000px', top: "0vh"}
+        }
+      },
+      animation: {
+        'star': 'star 15s linear infinite'
+      },
       screens: {
         // I DIDNT KNOW IT WAS MOBILE FIRST... AAAAAAAAAHHHHHHHHHH
         xl: { max: "1280px" },
@@ -33,10 +45,8 @@ module.exports = {
         lg: '0 8px 16px var(--tw-shadow-color)',
       },
       fontFamily: {
-        "rubik": ['var(--font-rubik)'],
-        "jb": ['var(--font-jb-mono)'],
-        "bs": ['var(--font-big-shoulders)'],
-        "oxanium": ['var(--font-oxanium)']
+        "rubik": ['rubik'],
+        "merriweather": ['merriweather']
       },
       width: {
         "10vh": "10vh",
