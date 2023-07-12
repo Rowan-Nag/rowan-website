@@ -20,6 +20,7 @@ export default function HomeTest(){
         return min+ Math.floor(Math.random()*((max-min)+1))
     }
 
+
     let createTemporaryStar = (x, y)=>{
         let xPos = x-starContainer.current.offsetLeft
         let yPos = y-starContainer.current.offsetTop
@@ -62,7 +63,7 @@ export default function HomeTest(){
             stars.push(
             <CSSTransition 
                 key = {stars.length}
-                
+                timeout={speed*1000}
                 classNames="stars">
                 <div style={{
                     transformOrigin: 'left',

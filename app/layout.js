@@ -1,12 +1,16 @@
 import './globals.css'
-import {Rubik, Big_Shoulders_Stencil_Display, Nova_Mono, JetBrains_Mono, Oxanium} from 'next/font/google'
 import "@fontsource/merriweather"
 import "@fontsource/rubik"
 
 
 export const metadata = {
-  title: 'Rowan Nag',
-  description: 'Undergraduate Student @ Purdue University, EAPS Departrment',
+  title: 'Rowan Nag | Planetary Scientist',
+  description: 'Undergraduate Student at Purdue University, studying Planetary Science and Physics',
+  icons: {
+    icon: './favicon.ico',
+    shortcut: './favicon.ico',
+    apple: './favicon.ico'
+  },
 }
 
 export default function RootLayout({ children }) {
