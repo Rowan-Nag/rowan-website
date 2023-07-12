@@ -1,6 +1,4 @@
 'use client'
-
-import { useScroll, motion} from "framer-motion"
 import { useRef, useState } from "react"
 import useOnScreen from "./Components/useOnScreen"
 import rowanphoto from "./res/rowanphoto.webp"
@@ -25,7 +23,7 @@ export default function About(){
 
 
     return (
-    <div className='relative min-h-screen w-full bg-neutral-900 z-10 flex flex-row justify-center font-rubik' id="about">
+    <div className='relative min-h-screen w-full bg-neutral-900 z-10 flex flex-row justify-center font-rubik overflow-x-hidden' id="about">
         <div className="absolute w-full h-full"></div>
         <div className="absolute top-1/2 " ref={ref}></div>
         <div className=' absolute w-full h-4 bg-black bg-gradient-to-b to-neutral-950 from-neutral-900'></div>
@@ -41,7 +39,7 @@ export default function About(){
             className='self-center relative transition-opacity duration-700 delay-700 flex flex-col w-[60%] max-w-lg md:w-[80%] h-fit p-10 sm:py-0 sm:p-4 m-10 sm:m-0 justify-start border-4 border-neutral-400 bg-neutral-300'
             style = {activated ? {'borderOpacity':1} : {'borderColor':'rgba(0,0,0,0)', color:'rgba(0,0,0,.3)'}}
             >
-                <Image src={rowanphoto} className="border-2 self-center drop-shadow-sm border-neutral-400 m-10 sm:mt-4"/>
+                <Image src={rowanphoto} className="border-2 self-center drop-shadow-sm border-neutral-400 m-10 sm:mt-4" alt="photograph of rowan nag"/>
                 <div className='text-lg text-neutral-700 text-center sm:text-base'>
                     
                     My name is Rowan Nag. I'm an undergraduate student at Purdue University. <br/><br/>

@@ -36,14 +36,14 @@ export default function Astrophotography(){
                 <div className=""></div>
             </div>
             <div className="flex flex-row flex-wrap mx-auto justify-center" ref={ref}>
-                <Astroimg src={andromeda} />
-                <Astroimg src={heart} />
-                <Astroimg src={na} />
-                <Astroimg src={orion} />
-                <Astroimg src={pleiades} />
-                <Astroimg src={ring} />
-                <Astroimg src={rosette} />
-                <Astroimg src={veil} />
+                <Astroimg src={andromeda} alt="Photograph of andromeda galaxy" url="https://www.instagram.com/p/CXXic_OLN2b/?img_index=1"/>
+                <Astroimg src={heart}     alt="Photograph of heart nebula" url="https://www.instagram.com/p/CVMOFoZp9jD/?img_index=1"/>
+                <Astroimg src={na}        alt="Photograph of north american nebula" url="https://www.instagram.com/p/ClwzPEApaog/?img_index=1"/>
+                <Astroimg src={orion}     alt="Photograph of orion nebula" url="https://www.instagram.com/p/CZdWSQhlUR0/?img_index=1"/>
+                <Astroimg src={pleiades}  alt="Photograph of the pleiaddes stars" url="https://www.instagram.com/p/CZqyZlrL41m/?img_index=1"/>
+                <Astroimg src={ring}      alt="Photograph of ring nebula" url="https://www.instagram.com/p/CuYOLovrmVS/?img_index=1"/>
+                <Astroimg src={rosette}   alt="Photograph of rosette nebula" url="https://www.instagram.com/p/Cm-NyMzP7N4/?img_index=1"/>
+                <Astroimg src={veil}      alt="Photograph of veil nebula" url="https://www.instagram.com/p/Cga6iairULs/?img_index=1"/>
 
 
             </div>
