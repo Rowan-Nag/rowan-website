@@ -1,6 +1,6 @@
 'use client'
 
-import andromedaImg from "./andromeda_lowres.webp"
+import andromedaImg from "./res/andromeda_lowres.webp"
 import { useEffect, useRef, useState } from "react"
 import useOnScreen from "./Components/useOnScreen"
 import Image from 'next/image'

@@ -2,19 +2,12 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 
 export default function Astroimg({src, url}){
-    let skeleton = <div className="w-full h-full animate-pulse bg-slate-400 roudned-lg"></div>
 
-    const [loaded, setLoaded] = useState(false)
 
-    useEffect(()=>{
-        setLoaded(true)
-    },[])
 
     return (
-        <div className="h-auto w-auto">
-
-            {(loaded ? null : skeleton)}
-            <Image src = {src} className="w-full h-full" fill onLoad={()=>{setLoaded(true)}} style={loaded ? {} : {display:'none'}}/>
+        <div className="h-auto w-auto backdrop-grayscale">
+            <Image src = {src} className="md:w-[80%] -z-10 m-5 md:m-2 p-0 border-2 border-neutral-400 cursor-pointer grayscale-[70%] brightness-90 hover:grayscale-0 hover:brightness-100" placeHolder='blur'/>
         </div>
     )
 }

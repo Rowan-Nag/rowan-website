@@ -9,7 +9,8 @@ export default function StickyHeader(){
             className="text-wrap flex backdrop-blur-sm backdrop-grayscale justify-center min-w-[15%] h-[80%] p-2 m-auto  border-solid border-neutral-500 border-2">
                 <span 
                 key={i}
-                className='self-center text-neutral-500 mix-blend-difference'>{title}</span>
+                className='self-center text-neutral-500 mix-blend-difference'
+                >{title}</span>
             </div>
             ))}
         </header>

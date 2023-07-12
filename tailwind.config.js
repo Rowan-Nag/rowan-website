@@ -14,7 +14,7 @@ module.exports = {
     extend: {
       keyframes: {
         star: {
-          '0%':  {opacity: 0,right:'-230px', top: "0vh"},
+          '0%':  {opacity: 0,right:'-330px', top: "0vh"},
           '10%': {opacity:1},
           '50%': {opacity:1},
           '60%': {opacity: 0, right: '1000px', top:"0vh"},
@@ -45,10 +45,8 @@ module.exports = {
         lg: '0 8px 16px var(--tw-shadow-color)',
       },
       fontFamily: {
-        "rubik": ['var(--font-rubik)'],
-        "jb": ['var(--font-jb-mono)'],
-        "bs": ['var(--font-big-shoulders)'],
-        "oxanium": ['var(--font-oxanium)']
+        "rubik": ['rubik'],
+        "merriweather": ['merriweather']
       },
       width: {
         "10vh": "10vh",

@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/merriweather": "^5.0.5",
+    "@fontsource/rubik": "^5.0.5",
     "autoprefixer": "^10.4.14",
     "framer-motion": "^10.12.17",
     "next": "^13.4.6",
