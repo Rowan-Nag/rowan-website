@@ -1,13 +1,15 @@
 'use client'
-import { animate } from "framer-motion"
+
 import { useEffect, useRef, useState } from "react"
 // var CSSTransitionGroup = require('react-transition-group/CSSTransitionGroup') // ES5 with npm
 import { TransitionGroup, CSSTransition } from 'react-transition-group' // ES6
 
 export default function HomeTest(){
 
+
+
     const numStars = 8
-    const starSize = "1"
+    const starSize = "2"
     const starTailSize =300
 
     const [stars, updateStars] = useState([])
@@ -17,6 +19,7 @@ export default function HomeTest(){
     let random = (min, max)=>{
         return min+ Math.floor(Math.random()*((max-min)+1))
     }
+
 
     let createTemporaryStar = (x, y)=>{
         let xPos = x-starContainer.current.offsetLeft
@@ -29,7 +32,7 @@ export default function HomeTest(){
         timeout={speed*1000}
         unmountOnExit
         classNames="stars">
-            <div style={{transformOrigin: 'left',transform: `translateX(${xPos}px) translateY(${yPos}px) rotate(-80deg)`}}>
+            <div style={{transformOrigin: 'left',transform: `translateX(${xPos}px) translateY(${yPos}px) rotate(-${70+Math.random()*40}deg)`}}>
             <div 
                 key = {stars.length}
                 className= "bottom-0 opacity-0 bg-gradient-to-r from-white to-transparent absolute"
@@ -55,15 +58,16 @@ export default function HomeTest(){
             let delay = Math.random()*5
             let offsetY = random(30, 60)
             let offsetX = random(-50, 50)
-    
+            let angle = random(-85, -75)
+
             stars.push(
             <CSSTransition 
                 key = {stars.length}
-                
+                timeout={speed*1000}
                 classNames="stars">
                 <div style={{
                     transformOrigin: 'left',
-                    transform: `translateX(${offsetX}vw) translateY(${-offsetY}vh) rotate(-80deg)`}}>
+                    transform: `translateX(${offsetX}vw) translateY(${-offsetY}vh) rotate(${angle}deg)`}}>
 
                     <div 
                         key = {stars.length}
@@ -94,7 +98,7 @@ export default function HomeTest(){
         className="w-full h-screen bg-neutral-900 flex flex-col justify-around items-center text-neutral-300 "
         onMouseDown={e=>{
             createTemporaryStar(e.clientX,e.clientY)
-            console.log(e.clientX, e.clientY)
+            // console.log(e.clientX, e.clientY)
         }}
         >
             <div className="self-center z-0 fixed" ref={starContainer}>
@@ -104,9 +108,10 @@ export default function HomeTest(){
                 </TransitionGroup>
                 <div className="animate-star"></div>
             </div>
-            <div className="relative m-[10%] select-none z-10 bg-neutral-900 bg-opacity-90 text-center p-4 border-neutral-500 border-4 rounded-md">
-                <div className="text-6xl font-merriweather md:text-4xl">ROWAN NAG</div>
-                <div className="text-4xl font-merriweather md:text-2xl">Planetary Scientist</div>
+            <div className="font-merriweather relative m-[10%] select-none z-10 bg-neutral-900 bg-opacity-90 text-center p-4 border-neutral-500 border-4 rounded-md">
+                <div className="text-6xl md:text-4xl">ROWAN NAG</div>
+                <div className="text-4xl md:text-2xl">Planetary Scientist</div>
+                
             </div>
 
             {/* <div className="bg-neutral-800 z-10 border-4 border-neutral-700 rounded-md text-neutral-400 text-lg p-4 flex-grow-0 w-1/4">
