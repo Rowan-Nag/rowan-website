@@ -20,7 +20,7 @@ export default function Astrophotography(){
     const activated = useOnScreen(ref)
 
     return(
-        <div className='relative min-h-screen w-full z-0 flex flex-col justify-around items-center' style={{boxShadow:"0px 10px black"}}id="photography">
+        <div className='relative min-h-screen w-full z-0 flex flex-col justify-around items-center pb-8' style={{boxShadow:"0px 10px black"}}id="photography">
             <div className='w-full top-0 h-4 bg-black bg-gradient-to-t to-neutral-950 from-neutral-900'></div>
             <div className="self-center m-5">
                 <div className="bg-neutral-900 bg-opacity-90 relative w-full h-full text-neutral-400 text-md font-rubik text-center border-4 border-neutral-700 p-4">

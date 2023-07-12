@@ -14,10 +14,10 @@ export default function Contact(){
                 <div className="border-2 border-neutral-300 self-center mx-auto bg-neutral-500 bg-opacity-70 p-4 text-center text-neutral-100">
                     <div className="text-6xl text-shadow-sm">Contact Me</div>
                     <div className="flex flex-wrap flex-col w-full">
-                        <a href="https://github.com/Rowan-Nag" className="p-2">Github<FontAwesomeIcon className="w-8 h-8 mx-auto" icon={faGithub}/></a>
-                        <a href="" className="p-2">Instagram<FontAwesomeIcon className="w-8 h-8 mx-auto" icon={faInstagram}/></a>
-                        <a href="mailto: nag5@purdue.edu" className="p-2">LinkedIn<FontAwesomeIcon className="w-8 h-8 mx-auto" icon={faLinkedinIn}/></a>
-                        <a href="https://www.linkedin.com/in/rowan-nag-25221121a/" className="p-2">nag5@purdue.edu<FontAwesomeIcon className="w-8 h-8 mx-auto" icon={faEnvelope}/></a>
+                        <a href="https://github.com/Rowan-Nag" className="p-2 px-4 w-fit mx-auto">Github<FontAwesomeIcon className="w-8 h-8 mx-auto" icon={faGithub}/></a>
+                        <a href="" className="p-2 px-4 w-fit mx-auto">Instagram<FontAwesomeIcon className="w-8 h-8 mx-auto" icon={faInstagram}/></a>
+                        <a href="mailto: nag5@purdue.edu" className="p-2 px-4 w-fit mx-auto">LinkedIn<FontAwesomeIcon className="w-8 h-8 mx-auto" icon={faLinkedinIn}/></a>
+                        <a href="https://www.linkedin.com/in/rowan-nag-25221121a/" className="p-2 px-4 w-fit mx-auto">nag5@purdue.edu<FontAwesomeIcon className="w-8 h-8 mx-auto" icon={faEnvelope}/></a>
                     </div>
                 </div>
             </div>
