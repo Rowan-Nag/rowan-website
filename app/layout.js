@@ -4,8 +4,8 @@ import "@fontsource/rubik"
 
 
 export const metadata = {
-  title: 'Rowan Nag | Planetary Scientist',
-  description: 'Undergraduate Student at Purdue University, studying Planetary Science and Physics',
+  title: 'Rowan Nag | Student at Purdue University',
+  description: "I'm Rowan Nag, a current undergraduate student at Purdue University studying Planetary Science and Physics. I do web-development, photography, and science-things.",
   icons: {
     icon: './favicon.ico',
     shortcut: './favicon.ico',
