@@ -23,7 +23,7 @@ export default function About(){
 
 
     return (
-    <div className='relative min-h-screen w-full bg-neutral-900 z-10 flex flex-row justify-center font-rubik overflow-x-hidden' id="about">
+    <div className='relative min-h-screen w-full backdrop-blur-sm z-10 flex flex-row justify-center font-rubik overflow-x-hidden' id="about">
         <div className="absolute w-full h-full"></div>
         <div className="absolute top-1/2 " ref={ref}></div>
         <div className=' absolute w-full h-4 bg-black bg-gradient-to-b to-neutral-950 from-neutral-900'></div>
