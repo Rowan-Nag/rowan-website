@@ -55,7 +55,7 @@ export default function About(){
         </div>
 
 
-
+        <div className='absolute w-full bottom-0 h-4 bg-black bg-gradient-to-t to-neutral-neutral-950 from-neutral-900'></div>
     </div>
     )
 }
