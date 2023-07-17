@@ -4,6 +4,7 @@ import About from './about'
 import Header from "./header"
 import HomeTest from './homeTest'
 import Contact from './contact'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Page() {
   const  shadow =  {textShadow: '0px 0px 0 lightgray, 1px 0px 0 lightgray, -1px 0px 0 lightgray, 0px 1px 0 lightgray'}
@@ -19,7 +20,7 @@ export default function Page() {
       <About/>
       <Astrophotography/>
       <Contact/> 
-
+      <Analytics/>
 
 
    
