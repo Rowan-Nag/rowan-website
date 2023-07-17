@@ -1,18 +1,13 @@
 export default function StickyHeader(){
 
     return (
-        <header
-            className='font-jb text-md font-normal z-50 w-screen h-10vh bg-transparent text-neutral-700 flex flex-row justify-evenly fixed top-0
-            md:hidden'>
-            {['Home','About', 'Projects', 'Astrophotography', 'Contact'].map((title,i)=>(
-            <div
-            className="text-wrap flex backdrop-blur-sm backdrop-grayscale justify-center min-w-[15%] h-[80%] p-2 m-auto  border-solid border-neutral-500 border-2">
-                <span 
-                key={i}
-                className='self-center text-neutral-500 mix-blend-difference'
-                >{title}</span>
-            </div>
-            ))}
+        <header className='fixed text-neutral-300 top-0 flex flex-row justify-between bg-neutral-900 bg-opacity-90 w-full z-20 border-2 border-neutral-700 rounded-sm select-none sm:hidden'>
+            
+            <a className='w-full p-3 m-2 mx-8 text-center hover:bg-neutral-800 hover:text-neutral-200 rounded-md cursor-pointer transition-colors' href="#home">Home</a>
+            <a className='w-full p-3 m-2 mx-8 text-center hover:bg-neutral-800 hover:text-neutral-200 rounded-md cursor-pointer transition-colors' href="#about">About</a>
+            <a className='w-full p-3 m-2 mx-8 text-center hover:bg-neutral-800 hover:text-neutral-200 rounded-md cursor-pointer transition-colors' href="#photography">Astrophotography</a>
+            <a className='w-full p-3 m-2 mx-8 text-center hover:bg-neutral-800 hover:text-neutral-200 rounded-md cursor-pointer transition-colors' href="#contact">Contact</a>
+
         </header>
         )
 }
