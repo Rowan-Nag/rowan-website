@@ -108,9 +108,9 @@ export default function HomeTest(){
                 </TransitionGroup>
                 <div className="animate-star"></div>
             </div>
-            <div className="font-merriweather relative m-[10%] select-none z-10 bg-neutral-900 bg-opacity-90 text-center p-4 border-neutral-500 border-4 rounded-md">
-                <div className="text-6xl md:text-4xl">ROWAN NAG</div>
-                <div className="text-4xl md:text-2xl">Planetary Scientist</div>
+            <div className="font-[philosopher] relative m-[10%] select-none z-10 bg-neutral-900 bg-opacity-90 text-center p-8 px-16 md:px-8  border-neutral-700 border-4 rounded-md">
+                <div className="text-7xl md:text-6xl">ROWAN NAG</div><br/>
+                <div className="text-3xl md:text-2xl ">Planets • Physics • Programming</div>
                 
             </div>
 

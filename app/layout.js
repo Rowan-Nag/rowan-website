@@ -1,6 +1,7 @@
 import './globals.css'
-import "@fontsource/merriweather"
 import "@fontsource/rubik"
+import "@fontsource/quicksand"
+import "@fontsource/philosopher"
 
 
 export const metadata = {

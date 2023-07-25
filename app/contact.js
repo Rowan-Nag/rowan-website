@@ -17,7 +17,7 @@ export default function Contact(){
     const activated = useOnScreen(ref)
 
     return(
-        <div className="relative backdrop-invert bg-neutral-400 bg-opacity-60">
+        <div className="relative backdrop-invert bg-neutral-400 bg-opacity-60 font-[quicksand]">
             {/* <div className="absolute h-4 w-full -top-2 "></div> */}
             <div className="h-90vh w-full flex">
                 <div className="border-2 border-neutral-300 rounded-lg self-center mx-auto bg-neutral-500 bg-opacity-70 p-6 text-center text-neutral-100 delay-100 transition-opacity duration-700"
@@ -39,7 +39,7 @@ export default function Contact(){
                             <FontAwesomeIcon className="w-8 h-8 mx-auto" icon={faLinkedinIn}/>
                         </a>
 
-                        <a className="p-2 px-4 w-fit mx-auto transition-colors hover:text-neutral-300" target="_blank" href="mailto: nag5@purdue.edu">
+                        <a className="p-2 px-4 w-fit mx-auto transition-colors hover:text-neutral-300" href="mailto: nag5@purdue.edu">
                             nag5@purdue.edu<p/>
                             <FontAwesomeIcon className="w-8 h-8 mx-auto" icon={faEnvelope}/>
                         </a>
@@ -54,7 +54,7 @@ export default function Contact(){
                 width={3712}
                 height={590} 
                 style={{
-                    filter:"grayscale(85%) drop-shadow(0px -5px 5px rgba(30,0,0,.7))",
+                    filter:"grayscale(75%) drop-shadow(0px -5px 5px rgba(30,0,0,.7))",
                     objectFit:"contain",
                     opacity: (activated ? 1 : 0)
                 }} placeholder="empty" id="contact"
