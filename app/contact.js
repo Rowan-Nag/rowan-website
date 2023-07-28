@@ -20,7 +20,7 @@ export default function Contact(){
         <div className="relative backdrop-invert bg-neutral-400 bg-opacity-60 font-[quicksand]">
             {/* <div className="absolute h-4 w-full -top-2 "></div> */}
             <div className="h-90vh w-full flex">
-                <div className="border-2 border-neutral-300 rounded-lg self-center mx-auto bg-neutral-500 bg-opacity-70 p-6 text-center text-neutral-100 delay-100 transition-opacity duration-700"
+                <div className="relative top-[10vh] border-2 border-neutral-300 rounded-lg self-center mx-auto bg-neutral-500 bg-opacity-70 p-6 text-center text-neutral-100 delay-100 transition-opacity duration-700"
                 style={{opacity: (activated ? 1 : 0)}}>
                     <div className="text-6xl text-shadow-sm md:text-4xl mb-4">Contact Me</div>
                     <div className="flex flex-wrap flex-col w-full">

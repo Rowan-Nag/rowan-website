@@ -22,7 +22,7 @@ export default function Astrophotography(){
     return(
         <div className='relative min-h-screen w-full z-0 flex flex-col justify-around items-center pb-8' id="photography">
             <div className="self-center m-5">
-                <div className="bg-neutral-900 bg-opacity-90 relative w-full h-full text-neutral-400 text-md font-rubik text-center border-4 border-neutral-700 p-4">
+                <div className="bg-neutral-800 bg-opacity-90 relative w-full h-full text-neutral-400 text-md font-rubik text-center border-2 border-neutral-300 rounded-xl p-4">
                     All photos taken by me. <br/>
                     I've done astrophotography since I first got my telescope - sophomore year of highschool. <br/><br/>
                     I shot them using a refractor telescope & a motorized equatorial mount. <br/><br/>

@@ -25,7 +25,7 @@ export default function HomeTest(){
         let xPos = x-starContainer.current.offsetLeft
         let yPos = y-starContainer.current.offsetTop
         let speed = 2+Math.random()*6
-        console.log(xPos, yPos)
+        // console.log(xPos, yPos)
         let star = 
         <CSSTransition 
         key = {stars.length}
@@ -108,9 +108,10 @@ export default function HomeTest(){
                 </TransitionGroup>
                 <div className="animate-star"></div>
             </div>
-            <div className="font-[philosopher] relative m-[10%] select-none z-10 bg-neutral-900 bg-opacity-90 text-center p-8 px-16 md:px-8  border-neutral-700 border-4 rounded-md">
-                <div className="text-7xl md:text-6xl">ROWAN NAG</div><br/>
-                <div className="text-3xl md:text-2xl ">Planets • Physics • Programming</div>
+            <div className="font-[philosopher] relative m-[10%] select-none z-10 bg-neutral-800 bg-opacity-80 text-center p-8 px-16 md:px-8  border-neutral-300 border-2 rounded-md outline outline-offset-4">
+                <div className="text-7xl md:text-4xl">ROWAN NAG</div><br/>
+                <div className="relative h-1 bottom-3 rounded-md bg-neutral-300 w-[110%] right-[5%]"/>
+                <div className="text-3xl md:text-lg ">Planets • Physics • Programming</div>
                 
             </div>
 
