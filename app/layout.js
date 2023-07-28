@@ -10,7 +10,7 @@ export const metadata = {
   openGraph :{
     title: "Rowan Nag | Undergraduate Student",
     description: 
-    "Planets • Physics • Programming \n At Purdue University"
+    "Planets • Physics • Programming &#x0A; At Purdue University"
 
   },
   icons: {
